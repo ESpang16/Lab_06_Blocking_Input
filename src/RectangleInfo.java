@@ -25,13 +25,13 @@ public class RectangleInfo {
             if (in.hasNextDouble()) {
                 height = in.nextDouble();
                 if (height > 0) {
-                    done = true; // Valid input
+                    done = true;
                 } else {
                     System.out.println("Height must be a positive number.");
                     done = false;
                 }
             } else {
-                trash = in.next(); // Consume invalid input
+                trash = in.next();
                 System.out.println("Invalid input. You entered: " + trash);
                 done = false;
             }
